@@ -1,0 +1,524 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+#main{
+    height: 100%;
+    width: 100%;
+}
+
+#header{
+    height: 13%;
+    width: 100%;
+    background-color: white;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+}
+
+#logo{
+    height: 70%;
+    /* margin: 20px; */
+}
+
+#logo img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.text{
+    /* margin: 1.2%; */
+    /* color: rgb(49, 49, 157); */
+    padding: 10px 14px;
+    text-decoration: none;
+    color: black;
+    font-style: normal;
+    font-weight: bolder;
+    display: flex;  /* Use For More Icon it Will be Flex */
+    align-items: center;
+    gap: 5px;
+}
+
+#searchBox{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+#searchInput{
+    width: 0;
+    opacity: 0;
+    padding: 6px 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    outline: none;
+
+    transition: all 0.3s ease;
+}
+
+#searchBox.active #searchInput{
+    width: 160px;
+    opacity: 1;
+}
+
+.text:hover{
+    color: rgb(49, 49, 157);
+}
+
+#ContactDetails{
+    /* margin-left: 25px; */
+    /* color: rgb(49, 49, 157); */
+    font-style: italic;
+    font-weight: lighter;
+    text-align: center;
+}
+
+#ContactDetails:hover{
+    color: rgb(49, 49, 157)
+}
+
+/* .icon{
+    padding: 10px;
+    border-radius: 50%;
+} */
+
+/* .icon:hover{
+    background-color: lightblue;
+} */
+
+#searchIcon{
+    padding: 10px;
+    border-radius: 50%;
+}
+
+#searchIcon:hover{
+    background-color: lightblue;
+}
+
+#language-box{
+    position: relative;
+}
+
+#language-menu{
+    position: absolute;
+    top: 35px;
+    right: 0;
+    background: white;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+    border-radius: 6px;
+    display: none;
+    min-width: 120px;
+}
+
+#language-menu p{
+    padding: 10px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+#language-menu p:hover{
+    background-color: #eaf5fe;
+}
+
+/* hover se open */
+#language-box:hover #language-menu{
+    display: block;
+}
+
+#login{
+    padding: 10px;
+    border-radius: 50px;
+    /* margin-left: 20px; */
+    display: flex;
+}
+
+#login:hover{
+    background-color: lightblue;
+}
+
+#try{
+    /* margin-left: 30px; */
+    background-color: green;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 10px;
+}
+
+#try:hover{
+    background-color: rgb(1, 40, 1);
+}
+
+#fakeheader{
+    height: 13%;
+    width: 100%;
+    background-color: rgb(239, 239, 232);
+}
+
+#page1{
+    height: 87%;
+    width: 100%;
+}
+
+#strip{
+    height: 8%;
+    width: 100%;
+    background-color: rgb(6, 6, 120);
+    color: white;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+#strip u{
+    margin-left: 15px;
+}
+
+#content{
+    height: 76%;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+}
+
+#box1{
+    height: 90%;
+    width: 47%;
+    background-color: white;
+}
+
+#box1 h1{
+    font-size: 42px;
+    color: rgb(3, 3, 95);
+    margin: 15px;
+    /* margin-left: 20px;
+    margin-bottom: 3%; */
+}
+
+#box1 p{
+    font-size: 21px;
+    margin: 15px;
+    /* margin-left: 20px;
+    margin-right: 20px; */
+}
+
+#btn{
+    margin: 50px;
+    display: flex;
+    text-align: center;
+}
+
+#btn1{
+    width: 23%;
+    margin-left: 20px;
+    padding: 10px 20px;
+    color: white;
+    background-color: blue;
+    border-radius: 5px;
+}
+
+#btn1:hover{
+    background-color: rgb(9, 9, 89);
+}
+
+#btn2{
+    width: 23%;
+    margin-left: 30px;
+    padding: 10px 20px;
+    color: rgb(51, 51, 143);
+    background-color: white;
+    border: 2px solid rgb(51, 51, 143);
+    border-radius: 5px;
+}
+
+#btn2:hover{
+    border-color: black;
+    background-color: rgb(139, 145, 148);
+}
+
+#box2{
+    height: 90%;
+    width: 47%;
+    background-color: white;
+}
+
+#box2 video{
+    height: 100%;
+    width: 100%;
+    border-radius: 8px;
+    border-top: 8px;
+}
+
+#heading{
+    height: 16%;
+    width: 100%;
+    color: rgb(7, 7, 108);
+    background-color: white;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+#heading h1{
+    font-weight: 500;
+}
+
+#Pagemiddle img{
+    height: 150%;
+    width: 100%;
+}
+
+#page2{
+    height: 128%;
+    width: 100%;
+    /* background-color: gray; */
+    /* background-image: url(https://wp.sfdcdigital.com/en-us/wp-content/uploads/sites/4/2024/03/marquee-fins-pdp-background-min.png?resize=2048,640); */
+    background-image: url(https://wp.sfdcdigital.com/en-us/wp-content/uploads/sites/4/2025/10/product-blue-bg.jpg?resize=2048,626);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 60px 0;
+}
+
+/* #page2 .card{
+  position: relative;
+  z-index: 2;
+} */
+
+
+#line1{
+    display: flex;
+}
+
+.card{
+    height: 270px;
+    width: 250px;
+    margin: 70px;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    position: relative;
+}
+
+#circle{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: white;
+    top: 60%;
+    right: 8%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+#line2{
+    display: flex;
+}
+
+#card1{
+    align-items: center;
+}
+
+#card1 h2{
+    margin-left: 15px;
+    margin-bottom: 10px;
+    margin-top: 20%;
+}
+
+#card1 h2:hover{
+    color: rgb(64, 64, 197);
+}
+
+#card1 p{
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+#card1 u{
+    margin-left: 15px;
+    position: relative;
+    top: 15%;
+}
+
+#card1 u:hover{
+    color: rgb(64, 64, 197);
+}
+
+#card1 #circle img{
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    top: 15%;
+    left: 15%;
+}
+
+#card2 h2{
+    margin-left: 15px;
+    margin-bottom: 10px;
+    margin-top: 20%;}
+
+#card2 h2:hover{
+    color: rgb(64, 64, 197);
+}
+
+#card2 p{
+    margin-left: 15px;
+    margin-left: 15px;
+}
+
+#card2 u{
+    margin-left: 15px;
+    position: relative;
+    top: 25%;
+}
+
+#card2 u:hover{
+    color: rgb(64, 64, 197);
+}
+
+#card2 #circle img{
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    top: 15%;
+    left: 15%;
+}
+
+#card3 h2{
+    margin-left: 15px;
+    margin-bottom: 10px;
+    margin-top: 20%;}
+
+#card3 h2:hover{
+    color: rgb(64, 64, 197);
+}
+
+#card3 p{
+    margin-left: 15px;
+    margin-left: 15px;
+}
+
+#card3 u{
+    margin-left: 15px;
+    position: relative;
+    top: 25%;
+}
+
+#card3 u:hover{
+    color: rgb(64, 64, 197);
+}
+
+#card3 #circle img{
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    top: 15%;
+    left: 15%;
+}
+
+#card4 h2{
+    margin-left: 15px;
+    margin-bottom: 10px;
+    margin-top: 20%;}
+
+#card4 h2:hover{
+    color: rgb(64, 64, 197);
+}
+
+#card4 p{
+    margin-left: 15px;
+    margin-left: 15px;
+}
+
+#card4 u{
+    margin-left: 15px;
+    position: relative;
+    top: 25%;
+}
+
+#card4 u:hover{
+    color: rgb(64, 64, 197);
+}
+
+#card4 #circle img{
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    top: 15%;
+    left: 15%;
+}
+
+#card5 h2{
+    margin-left: 15px;
+    margin-bottom: 10px;
+    margin-top: 20%;}
+
+#card5 h2:hover{
+    color: rgb(64, 64, 197);
+}
+
+#card5 p{
+    margin-left: 15px;
+    margin-left: 15px;
+}
+
+#card5 u{
+    margin-left: 15px;
+    position: relative;
+    top: 25%;
+}
+
+#card5 u:hover{
+    color: rgb(64, 64, 197);
+}
+
+#card5 #circle img{
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    top: 15%;
+    left: 15%;
+}
+
+#card6 h2{
+    margin-left: 15px;
+    margin-bottom: 10px;
+    margin-top: 20%;}
+
+#card6 h2:hover{
+    color: rgb(64, 64, 197);
+}
+
+#card6 p{
+    margin-left: 15px;
+    margin-left: 15px;
+}
+
+#card6 u{
+    margin-left: 15px;
+    position: relative;
+    top: 25%;
+}
+
+#card6 u:hover{
+    color: rgb(64, 64, 197);
+}
+
+#card6 #circle img{
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    top: 15%;
+    left: 15%;
+}
